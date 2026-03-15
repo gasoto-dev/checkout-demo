@@ -5,7 +5,7 @@ import { getDb } from "@/lib/db"
 import { getProductById, priceToCents } from "@/lib/products"
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY ?? "sk_test_placeholder", {
-  apiVersion: "2025-02-24.acacia",
+  apiVersion: "2026-02-25.clover",
 })
 
 export async function POST(req: NextRequest) {
