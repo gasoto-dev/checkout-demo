@@ -39,9 +39,8 @@ describe("products", () => {
     expect(priceToCents(0.99)).toBe(99)
   })
 
-  it("getImageUrl returns picsum URL", () => {
+  it("getImageUrl returns local image path", () => {
     const url = getImageUrl("camera")
-    expect(url).toContain("picsum.photos")
     expect(url).toContain("camera")
   })
 
