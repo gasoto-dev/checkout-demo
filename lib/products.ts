@@ -60,5 +60,5 @@ export function priceToCents(dollars: number): number {
 }
 
 export function getImageUrl(imageSeed: string): string {
-  return `https://picsum.photos/seed/${imageSeed}/400/300`;
+  return `/images/${imageSeed}.jpg`;
 }
