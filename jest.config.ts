@@ -11,6 +11,7 @@ const config: Config = {
   },
   setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
   passWithNoTests: true,
+  testPathIgnorePatterns: ["/node_modules/", "/e2e/"],
 }
 
 export default config
